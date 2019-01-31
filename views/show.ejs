@@ -1,0 +1,148 @@
+<% include partials/header %>
+
+    <div class="container">
+        <br>
+        <br>
+        <hr>
+        <h1 class='text-center'>
+            <%= course.title %>
+        </h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <div class="card" style="width: 16rem;">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h4 class="card-title display-5">Quizzes</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/courses/newquizes/<%= course._id %>" class="btn btn-info d-block">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <div class="card" style="width: 16rem;">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h4 class="card-title display-5">Lecture Notes</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/courses/newnotes/<%= course._id %>" class="btn btn-info d-block">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <div class="card" style="width: 16rem;">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h4 class="card-title display-5">Assignments</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/courses/newassignments/<%= course._id %>" class="btn btn-info d-block">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <div class="card" style="width: 16rem;">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h4 class="card-title display-5">Ebooks</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/courses/newbooks/<%= course._id %>" class="btn btn-info d-block">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="form-container" style="margin: 80px auto;">
+            <p class="form-title">Add Comment</p>
+            <hr class="account-form__line">
+            <form method="POST" action="/comments/<%= course._id %>">
+                <div class="form-group">
+                    <input class="form-text" autofocus type="text" name="comment" placeholder="Comment here">
+                </div>
+                <button type="submit" class="btn btn-new btn-large shadow">Submit</button>
+            </form>
+        </div>
+
+
+        <!-- <a href="/courses/newquizes/<%= course._id %>">Quizzes</a>
+        <a href="/courses/newnotes/<%= course._id %>">Lecture Notes</a>
+        <a href="/courses/newassignments/<%= course._id %>">Assignments</a>
+        <a href="/courses/newbooks/<%= course._id %>">Ebooks</a> -->
+
+        <!-- <form action='/comments/<%= course._id %>' method='POST'>
+            <input type="text" name="comment">
+            <input type="submit" name="submit" value="submit">
+        </form> -->
+        <h2 class="text-center">Comments</h2>
+        <br>
+        <ul class="list-group">
+            <% course.comments.forEach(function(note){ %>
+                <li class="list-group-item">
+                    <%= note %>
+                </li>
+                <% }); %>
+        </ul>
+        <hr>
+        <br>
+    </div>
+
+    <!-- <% course.quizes.forEach(function(quiz){ %>
+            <div>
+                <h3>Quiz</h3>
+                <p>
+                    <%= quiz %>
+                </p>
+                <a href="/courses/newquiz/<%= course._id %>">Add</a>
+                <%= quiz.name %>
+                    <p>
+                        <%= quiz.link %>
+                    </p>
+            </div>
+            <% }); %>
+                <% course.notes.forEach(function(note){%>
+                    <div>
+                        <h3>Notes</h3>
+                        <a href="/courses/newnote/<%= course._id %>">Add</a>
+                        <%= note.name %>
+                            <p>
+                                <%= note.link %>
+                            </p>
+                    </div>
+                    <% }); %>
+                        <% course.assignments.forEach(function(assign){%>
+                            <div>
+                                <h3>Assignments</h3>
+                                <a href="/courses/newassignment/<%= course._id %>">Add</a>
+                                <%= assign.name %>
+                                    <p>
+                                        <%= assign.link %>
+                                    </p>
+                            </div>
+                            <% }); %>
+                                <% course.books.forEach(function(book){%>
+                                    <div>
+                                        <h3>Books</h3>
+                                        <a href="/courses/newbook/<%= course._id %>">Add</a>
+                                        <%= book.name %>
+                                            <p>
+                                                <%= book.link %>
+                                            </p>
+                                    </div>
+                                    <% }); %> -->
+    <% include partials/footer %>

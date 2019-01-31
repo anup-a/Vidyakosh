@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+    <div class="container" style="max-width:60%">
+        <br>
+        <br>
+        <br>
+        <h2><b>List of all courses</b></h2>
+        <br>
+        <ul class="list-group shadow">
+            <% courses.forEach(function(course){ %>
+                <li class="list-group-item">
+                    <a class="btn btn-outline-info" href="/courses/<%= course._id %>">
+                        <%= course.title %>
+                    </a>
+                    <p style="margin-top: 0.5rem;margin-bottom: -1rem">
+                        <%= course.description %> | <b>Professors</b> -
+                            <%= course.professors %>
+                                <p>
+                </li>
+                <% }); %>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <% include partials/footer %>

@@ -1,0 +1,27 @@
+Standard Programme
+Visual C++ 2005 Uninstall:                                         	Fertig
+Visual C++ 2005:                                                         	Fertig
+Visual C++ 2005 x64:                                                  	Fertig
+Visual C++ 2008 Uninstall:                                         	Fertig
+Visual C++ 2008:                                                         	Fertig
+Visual C++ 2008 x64:                                                  	Fertig
+Visual C++ 2012 Uninstall:                                         	Fertig
+Visual C++ 2012 Minimum:                                      	Fertig
+Visual C++ 2012 Additional:                                      	Fertig
+Visual C++ 2012 Minimum x64:                                	Fertig (Reboot required)
+Visual C++ 2012 Additional x64:                               	Fertig (Reboot required)
+Visual C++ 2013 Uninstall:                                         	Fertig
+Visual C++ 2013:                                                         	Fertig (Reboot required)
+Visual C++ 2013 x64:                                                  	Fertig (Reboot required)
+
+Sonstige Runtimes
+Microsoft Visual J-Sharp 2.0 SE:                                	Fertig
+
+Standard Programme
+Adobe Flash Player - Plugin:                                     	Fertig
+Adobe Shockwave Player v12.2.8.198:                     	Fertig
+Microsoft Silverlight v5.1.50906.0 x64:                     	Fertig
+
+System Runtimes
+Allgemeine Runtime Dateien:                                   	Fertig
+Microsoft DirectX 9.0c Redistributable:                   	Fertig

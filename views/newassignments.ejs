@@ -1,0 +1,41 @@
+<% include partials/header %>
+    <div class="container">
+        <div class="form-container">
+            <p class="form-title">Upload Assignment</p>
+            <hr class="account-form__line">
+            <form ref='uploadForm' id='uploadForm' action='/upload/assignments/<%= course._id %>' method='post' encType="multipart/form-data">
+                <div class="form-group">
+                    <label>File Name</label>
+                    <input class="form-text" autofocus type="text" name="name" placeholder="File Name or Title">
+                </div>
+                <div class="form-group">
+                    <label>Choose File</label>
+                    <input class="form-text" autofocus type="file" name="sampleFile" placeholder="Course Name or Title">
+                </div>
+                <button type="submit" class="btn btn-new btn-large shadow">Upload</button>
+            </form>
+        </div>
+        <div class="card border-info mb-3" style="max-width: 58rem;margin:0 auto">
+            <div class="card-header">
+                <h3>ASSIGNMENT</h3>
+            </div>
+            <div class="card-body text-info">
+                <h5 class="card-title">Pdf/docs Files</h5>
+                <p class="card-text">
+                    <ul class='list-group'>
+                        <% course.assignments.forEach(function(assignment){ %>
+                            <li class="list-group-item" style="display:inline">
+                                <form style="display:inline-block">
+                                    <%= assignment.name %>
+                                </form>
+                                <form style="display:inline-block;float:right;" method='GET' action='/download/<%= assignment.link %>'>
+                                    <button type='submit' class="btn btn-outline-info" style="color:#026a7cda"><i  class="fas fa-download onhover"></i></button>
+                                </form>
+                            </li>
+                            <% }); %>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <% include partials/footer %>

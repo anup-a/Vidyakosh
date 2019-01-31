@@ -1,0 +1,182 @@
+    body {
+        background: #fff;
+        font-family: 'Raleway', sans-serif;
+        color: #234a56;
+    }
+    
+    header {
+        margin: 20px 0 0 0;
+    }
+    
+    label {
+        color: #747d87;
+        display: block;
+        font-weight: 700;
+        font-size: 13px;
+        margin: 0 0 13px 0;
+        letter-spacing: 0.05em;
+        line-height: 1.3;
+    }
+    
+    .form-title {
+        color: #505f7d;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.03em;
+        margin: 0 0 22px 0;
+        text-align: center;
+    }
+    
+    .form-container {
+        margin: 100px auto;
+        max-width: 380px;
+    }
+    
+    .form-text {
+        -webkit-appearance: none;
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #c4c7c9;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        padding: 10px 15px 12px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #4b5158;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .form-group {
+        margin: 0 0 24px 0;
+    }
+    
+     ::placeholder {
+        color: #929292;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .btn-new {
+        width: 100%;
+        padding: 18px 0px 19px;
+        background-color: #026a7cda;
+        border-radius: 3px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.165em;
+        cursor: pointer;
+    }
+    
+    .btn-imp {
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    .navbar-nav {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.165em;
+        cursor: pointer;
+    }
+    
+    .btn-new:hover {
+        /* border: 2px solid #026a7c; */
+        background-color: #026a7c;
+        color: white;
+    }
+    
+    .account-form__line {
+        border: 0;
+        height: 1px;
+        background-color: #ebeef1;
+        margin: 30px 0 34px;
+    }
+    
+    .navbar-custom {
+        background-color: #026a7c;
+    }
+    
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .navbar-custom .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, .8);
+    }
+    
+    .navbar-custom .nav-item.active .nav-link,
+    .navbar-custom .nav-item:hover .nav-link {
+        color: #ffffff;
+    }
+    
+    .nav-item {
+        margin: 0 10px;
+    }
+    
+    .jumbotron {
+        background-color: #fff;
+        border: 2px solid #026a7c;
+        padding: 3rem 2rem;
+        /* box-shadow: 0 0 0 5px hsl(0, 0%, 80%), 0 0 0 10px hsl(0, 0%, 90%); */
+    }
+    
+    .underline {
+        margin: 2px 0 0 0;
+        border-top: 2px solid rgba(255, 255, 255, .8);
+        transition: transform .3s;
+    }
+    
+    .underline-n {
+        width: 0%;
+    }
+    
+    .nav-item:hover .underline-n {
+        width: 100%;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    /* .info-btn {
+        margin: 20px auto;
+        display: block;
+        width: 40%;
+        padding: 12px 0px 12px;
+        border: 1.5px solid #026a7cda;
+        color: #026a7cda;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.165em;
+        cursor: pointer;
+    }
+    
+    .info-btn:hover {
+        color: white;
+        background: #026a7c;
+    } */
+
+    .home-buttons{
+        display: inline;
+    }
+    .jumbotron .container{
+        text-align: center;
+    }
+
+    .vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 50vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.onhover:hover{
+    color:white;
+}
